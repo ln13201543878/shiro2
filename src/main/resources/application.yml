@@ -1,0 +1,17 @@
+server:
+  port: 8000
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8
+    username: root
+    password: 123456
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+logging:
+  level:
+    com:
+      woniu:
+        mapper: DEBUG
