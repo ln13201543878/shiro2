@@ -40,8 +40,9 @@ public class UserinfoController {
 			List roles = login.getRoles();
 			map.put("trees", trees);
 			map.put("roles", roles);
-		} catch (Exception e) {
-		System.out.println("账号密码错误");
+		} catch (RuntimeException e) {
+			System.out.println("账号密码错误");
+		
 		}
 		return map;
 	}
